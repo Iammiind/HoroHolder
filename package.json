@@ -1,0 +1,29 @@
+{
+  "name": "horo-holder",
+  "version": "1.0.0",
+  "description": "SE391 project",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iammiind/HoroHolder.git"
+  },
+  "author": "iammiind",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iammiind/HoroHolder/issues"
+  },
+  "homepage": "https://github.com/Iammiind/HoroHolder#readme",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "lite-server": "^2.3.0"
+  }
+}
