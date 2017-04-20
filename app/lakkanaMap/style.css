@@ -1,0 +1,26 @@
+.lkm-wrapper-lakkanaMap {
+    width: 100%;
+    position: relative; 
+}
+.lkm-wrapper-img {
+    width: 100%;
+}
+.lkm-wrapper-lakkanaMap .lkm-lakkana-text {
+    width: 40%;
+}
+.lkm-aries-index {
+    position: absolute;
+    top: 12%;
+    left: 43%;
+    background-color: palevioletred;
+    width: 10%;
+    text-align: center;
+}
+.lkm-taurus-index {
+    position: absolute;
+    top: 16.5%;
+    left: 29%;
+    /*background-color: darkorange;*/
+    width: 10%;
+    text-align: center;
+}

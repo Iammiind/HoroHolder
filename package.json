@@ -4,7 +4,8 @@
   "description": "SE391 project",
   "main": "index.js",
   "scripts": {
-    "start": "lite-server"
+    "start": "lite-server",
+    "postinstall": "bower install"
   },
   "repository": {
     "type": "git",

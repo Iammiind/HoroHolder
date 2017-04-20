@@ -8,17 +8,42 @@
     <script src="bower_components/angular-route/angular-route.min.js"></script>
 
     <!--import stylesheet-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="app/menu/style.css">
+    <link rel="stylesheet" href="app/header/style.css">
+    <link rel="stylesheet" href="app/mainPage/style.css">
     <link rel="stylesheet" href="app/convertLakkanaMap/style.css">
-    <link rel="stylesheet" href="app/main/style.css">
+    <link rel="stylesheet" href="app/lakkanaMap/style.css">
     <title>Horo Holder</title>
 </head>
 <body>
-    <ng-view></ng-view>
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 header">
+            <main-header></main-header>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-2">
+                <menu-bar></menu-bar>
+            </div>
+            <div class="col-md-8">
+                 <div ng-view></div>
+            </div>
+            <div class="col-md-2">
+                Top3
+            </div>
+        </div>
+    </div>
+</div>
 
     <!--import javascript files-->
     <script src="app/module.js"></script>
     <script src="app/route.js"></script>
+    <script src="app/menu/directive.js"></script>
+    <script src="app/header/directive.js"></script>
+    <script src="app/mainPage/controller.js"></script>
     <script src="app/convertLakkanaMap/controller.js"></script>
-    <script src="app/main/controller.js"></script>
 </body>
 </html>

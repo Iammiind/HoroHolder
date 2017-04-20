@@ -1,15 +1,22 @@
 app.config(function ($routeProvider) {
     $routeProvider
     .when('/', {
-        templateUrl: 'app/main/index.html',
+        templateUrl: 'app/lakkanaMap/index.html',
         controller: 'mainCtrl'
+    })
+    .when('/convertLakkanaMap', {
+        templateUrl: 'app/convertLakkanaMap/index.html'
+    })
+    .when('/convertMappingOfStar', {
+        templateUrl: 'app/convertMappingOfStar/index.html'
+    })
+    .when('/findoutLakkanaZodiacs', {
+        templateUrl: 'app/findoutLakkanaZodiacs/index.html'
+    })
+    .when('/transportation', {
+        templateUrl: 'app/transportation/index.html'
+    })
+    .otherwise({
+        redirectTo: '/'
     });
-    // .when('/london', {
-    //     templateUrl: 'london.htm',
-    //     controller: 'londonCtrl'
-    // })
-    // .when('/paris', {
-    //     templateUrl: 'paris.htm',
-    //     controller: 'parisCtrl'
-    // });
 });
