@@ -1,6 +1,7 @@
 .lkm-wrapper-lakkanaMap {
-    width: 100%;
+    width: 70%;
     position: relative; 
+    margin: 0 auto;
 }
 .lkm-wrapper-img {
     width: 100%;
@@ -18,9 +19,89 @@
 }
 .lkm-taurus-index {
     position: absolute;
-    top: 16.5%;
+    top: 17%;
     left: 29%;
-    /*background-color: darkorange;*/
+    background-color: darkorange;
+    width: 10%;
+    text-align: center;
+}
+.lkm-gemini-index {
+    position: absolute;
+    top: 29%;
+    left: 20%;
+    background-color: seagreen;
+    width: 10%;
+    text-align: center;
+}
+.lkm-cancer-index {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    background-color: cornflowerblue;
+    width: 10%;
+    text-align: center;
+}
+.lkm-leo-index {
+    position: absolute;
+    top: 60.7%;
+    left: 20%;
+    background-color: rosybrown;
+    width: 10%;
+    text-align: center;
+}
+.lkm-virgo-index {
+    position: absolute;
+    top: 73%;
+    left: 29%;
+    background-color: rebeccapurple;
+    width: 10%;
+    text-align: center;
+}
+.lkm-libra-index {
+    position: absolute;
+    top: 73%;
+    left: 42.5%;
+    background-color: peachpuff;
+    width: 10%;
+    text-align: center;
+}
+.lkm-scorpio-index {
+    position: absolute;
+    top: 73%;
+    left: 56.3%;
+    background-color: paleturquoise;
+    width: 10%;
+    text-align: center;
+}
+.lkm-sagitarius-index {
+    position: absolute;
+    top: 60.9%;
+    left: 65%;
+    background-color: chocolate;
+    width: 10%;
+    text-align: center;
+}
+.lkm-capricornus-index {
+    position: absolute;
+    top: 45%;
+    left: 65%;
+    background-color: aqua;
+    width: 10%;
+    text-align: center;
+}
+.lkm-aquarius-index {
+    position: absolute;
+    top: 29%;
+    left: 65.3%;
+    background-color: olivedrab;
+    width: 10%;
+    text-align: center;
+}
+.lkm-pisces-index {
+    position: absolute;
+    top: 17%;
+    left: 56%;
+    background-color: lightcoral;
     width: 10%;
     text-align: center;
 }

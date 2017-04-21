@@ -1,7 +1,7 @@
 app.config(function ($routeProvider) {
     $routeProvider
     .when('/', {
-        templateUrl: 'app/lakkanaMap/index.html',
+        templateUrl: 'app/mainPage/index.html',
         controller: 'mainCtrl'
     })
     .when('/convertLakkanaMap', {
@@ -10,8 +10,8 @@ app.config(function ($routeProvider) {
     .when('/convertMappingOfStar', {
         templateUrl: 'app/convertMappingOfStar/index.html'
     })
-    .when('/findoutLakkanaZodiacs', {
-        templateUrl: 'app/findoutLakkanaZodiacs/index.html'
+    .when('/findoutLakkanaZodiac', {
+        templateUrl: 'app/findoutLakkanaZodiac/index.html'
     })
     .when('/transportation', {
         templateUrl: 'app/transportation/index.html'

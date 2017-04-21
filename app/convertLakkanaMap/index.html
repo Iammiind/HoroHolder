@@ -1,1 +1,106 @@
-ConvertLakkanaMap
+<div ng-controller="convertLakkanaMapCtrl">
+    <div class="lkm-wrapper-lakkanaMap">
+        <img class="lkm-wrapper-img" src="images/lakkanaMap.png" alt="">
+        <div class="lkm-aries-index">
+            <div ng-repeat="select in ariseSelected" ng-show="select.id === 1">
+                <img src="images/text/A1.png" alt="" class="lkm-lakkana-text">
+            </div>
+            <div ng-repeat="select in ariseSelected" ng-show="select.id === 2">
+                <img src="images/text/A2.png" alt="" class="lkm-lakkana-text">
+            </div>
+                <!--<img src="images/text/A3.png" alt="" class="lkm-lakkana-text">
+                <img src="images/text/A4.png" alt="" class="lkm-lakkana-text">
+                <img src="images/text/A5.png" alt="" class="lkm-lakkana-text">
+                <img src="images/text/A6.png" alt="" class="lkm-lakkana-text">
+                <img src="images/text/A7.png" alt="" class="lkm-lakkana-text">
+                <img src="images/text/A8.png" alt="" class="lkm-lakkana-text">
+                <img src="images/text/A9.png" alt="" class="lkm-lakkana-text">
+                <img src="images/text/A10.png" alt="" class="lkm-lakkana-text">
+                <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text">-->
+        </div>
+        <div class="lkm-taurus-index">
+            <img src="images/text/A1.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A2.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A3.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A4.png" alt="" class="lkm-lakkana-text">
+        </div>
+        <div class="lkm-gemini-index"> 
+            <img src="images/text/A1.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A2.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A3.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A4.png" alt="" class="lkm-lakkana-text">
+        </div>
+        <div class="lkm-cancer-index"> 
+            <img src="images/text/A1.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A2.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A3.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A4.png" alt="" class="lkm-lakkana-text">
+        </div>
+        <div class="lkm-leo-index"> 
+            <img src="images/text/A1.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A2.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A3.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A4.png" alt="" class="lkm-lakkana-text">
+        </div>
+        <div class="lkm-virgo-index"> 
+            <img src="images/text/A1.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A2.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A3.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A4.png" alt="" class="lkm-lakkana-text">
+        </div>
+        <div class="lkm-libra-index"> 
+            <img src="images/text/A1.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A2.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A3.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A4.png" alt="" class="lkm-lakkana-text">
+        </div>
+        <div class="lkm-scorpio-index"> 
+            <img src="images/text/A1.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A2.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A3.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A4.png" alt="" class="lkm-lakkana-text">
+        </div>
+        <div class="lkm-sagitarius-index"> 
+            <img src="images/text/A1.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A2.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A3.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A4.png" alt="" class="lkm-lakkana-text">
+        </div>
+        <div class="lkm-capricornus-index"> 
+            <img src="images/text/A1.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A2.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A3.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A4.png" alt="" class="lkm-lakkana-text">
+        </div>
+        <div class="lkm-aquarius-index"> 
+            <img src="images/text/A1.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A2.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A3.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A4.png" alt="" class="lkm-lakkana-text">
+        </div>
+        <div class="lkm-pisces-index"> 
+            <img src="images/text/A1.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A2.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A3.png" alt="" class="lkm-lakkana-text">
+            <img src="images/text/A4.png" alt="" class="lkm-lakkana-text">
+        </div>
+    </div>
+
+    <!--selected form-->
+    <div class="row">
+        <div class="col-md-6 col-xs-12">
+            <div class="row">
+                <div class="col-md-6 clm-text-zodiacs">
+                    ARISE
+                </div>
+                <div class="col-md-6">
+                    <div ng-dropdown-multiselect="" options="lakkanaNumber" selected-model="ariseSelected" extra-settings="lakkanaSetting"></div>
+                </div>
+            </div>
+            {{ariseSelected}}
+        </div>
+        <div class="col-md-6 col-xs-12">
+            test box2
+        </div>
+    </div>
+</div>
