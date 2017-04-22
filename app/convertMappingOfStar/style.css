@@ -1,0 +1,19 @@
+.cms-wrapper {
+    margin-top: 2%;
+}
+.cms-header-text {
+    text-align: center;
+}
+.cms-content-wrapper {
+    text-align: center;
+}
+.cms-select-wrapper {
+    width: 40%;
+}
+.cms-convert-button {
+    margin-left: 45%;
+}
+.cms-back-button {
+    margin-left: 45%;
+    margin-top: 2%;
+}

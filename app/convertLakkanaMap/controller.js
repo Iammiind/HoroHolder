@@ -1,19 +1,32 @@
 app.controller('convertLakkanaMapCtrl', function ($scope) {
     $scope.ariseSelected = [];
+    $scope.piscesSelected = [];
+    $scope.aquariusSelected = [];
+    $scope.capricornusSelected = [];
+    $scope.sagitariusSelected = [];
+    $scope.scorpioSelected = [];
+    $scope.libraSelected = [];
+    $scope.virgoSelected = [];
+    $scope.leoSelected = [];
+    $scope.cancerSelected = [];
+    $scope.geminiSelected = [];
+    $scope.taurusSelected = [];
+    $scope.statusConvert = false;
+
     $scope.lakkanaSetting = {
         displayProp: 'label'
-    }; 
-    $scope.lakkanaNumber = [ 
+    };
+    $scope.lakkanaNumber = [
         {
-            id: 1, 
+            id: 1,
             label: '๑'
-        }, 
+        },
         {
-            id: 2, 
+            id: 2,
             label: '๒'
-        }, 
+        },
         {
-            id: 3, 
+            id: 3,
             label: '๓'
         },
         {
@@ -48,5 +61,5 @@ app.controller('convertLakkanaMapCtrl', function ($scope) {
             id: 11,
             label: 'ล'
         }
-        ]; 
+    ];
 });

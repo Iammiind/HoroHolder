@@ -1,5 +1,43 @@
+.clm-wrapper {
+    margin-top: 5%;
+}
 .clm-text-zodiacs {
-    text-align: right;
+    /*font-weight: bold;*/
+    font-size: 3vmin;
+    text-align: center;
+}
+.clm-selected-main-wrapper {
+    background-color: slateblue;
+    margin-top: 5%;
+}
+.clm-selected-wrapper {
+    padding-top: 3%;
+}
+.clm-zodiac-wrapper {
+    padding: 3%;
+}
+.clm-button-wrapper {
+    margin-top: 2%;
+    padding: 5%;
+    padding-top: -3%;
+}
+.clm-convert-button {
+    margin-left: -16%;
+}
+.clm-back-button {
+    margin-top: 4%;
+    margin-left: 45%;
 }
 
+@media screen and (max-width: 768px) {
+    .clm-text-zodiacs {
+        font-weight: bold;
+    }
+    .clm-convert-button {
+        margin-left: 35%;
+    }
+    .clm-back-button {
+        margin-left: 37%;
+    }
+}
 
