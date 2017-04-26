@@ -24,14 +24,10 @@
     margin-top: 2%;
 }
 .flz-button-part {
-    margin-left: -75%;
     padding: 5%;
 }
 .flz-submit-button {
     margin-top: 5%;
-}
-.flz-back-button {
-    margin-left: 45%;
 }
 
 @media screen and (max-width: 768px) {
