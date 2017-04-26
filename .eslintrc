@@ -5,6 +5,7 @@
         "indent": ["error", 4],
         "no-unused-vars": 0,
         "eol-last": 2,
-        "semi": [2, "always"]
+        "semi": [2, "always"],
+        "standard/array-bracket-even-spacing": 0
     }
 }

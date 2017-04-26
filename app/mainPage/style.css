@@ -1,0 +1,23 @@
+.mp-wrapper {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding: 4%;
+    background-color: #F5F5F5;
+}
+.mp-header-text {
+    text-align: center;
+}
+img {
+    width: 40%;
+    height: auto;
+}
+.mp-image-wrapper {
+    margin-top: 3%;
+    text-align: center;
+}
+.mp-content-text {
+    font-size: 18px;
+}
+.mp-lakkana-text {
+    font-weight: bold;
+}

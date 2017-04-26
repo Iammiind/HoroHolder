@@ -1,43 +1,35 @@
 .clm-wrapper {
-    margin-top: 5%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding: 2%;
+    background-color: #F5F5F5;
 }
-.clm-text-zodiacs {
-    /*font-weight: bold;*/
-    font-size: 3vmin;
+.clm-header-text {
     text-align: center;
 }
-.clm-selected-main-wrapper {
-    background-color: slateblue;
-    margin-top: 5%;
+.clm-header-text {
+    text-align: center;
 }
-.clm-selected-wrapper {
-    padding-top: 3%;
+.clm-content-wrapper {
+    text-align: center;
 }
-.clm-zodiac-wrapper {
-    padding: 3%;
-}
-.clm-button-wrapper {
-    margin-top: 2%;
-    padding: 5%;
-    padding-top: -3%;
+.clm-select-wrapper {
+    width: 40%;
 }
 .clm-convert-button {
-    margin-left: -16%;
+    margin-left: 45%;
 }
 .clm-back-button {
-    margin-top: 4%;
     margin-left: 45%;
+    margin-top: 2%;
+}
+th {
+    background-color: #90A4AE;
+    /*color: #ffffff;*/
 }
 
 @media screen and (max-width: 768px) {
-    .clm-text-zodiacs {
-        font-weight: bold;
-    }
-    .clm-convert-button {
-        margin-left: 35%;
-    }
-    .clm-back-button {
-        margin-left: 37%;
+  .clm-convert-button {
+        margin-left: 38%;
     }
 }
-

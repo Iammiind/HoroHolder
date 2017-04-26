@@ -1,65 +1,65 @@
 app.controller('convertLakkanaMapCtrl', function ($scope) {
-    $scope.ariseSelected = [];
-    $scope.piscesSelected = [];
-    $scope.aquariusSelected = [];
-    $scope.capricornusSelected = [];
-    $scope.sagitariusSelected = [];
-    $scope.scorpioSelected = [];
-    $scope.libraSelected = [];
-    $scope.virgoSelected = [];
-    $scope.leoSelected = [];
-    $scope.cancerSelected = [];
-    $scope.geminiSelected = [];
-    $scope.taurusSelected = [];
-    $scope.statusConvert = false;
+    $scope.numberOne = '';
+    $scope.numberTwo = '';
+    $scope.numberThree = '';
+    $scope.numberFour = '';
+    $scope.numberFive = '';
+    $scope.numberSix = '';
+    $scope.numberSeven = '';
+    $scope.numberEight = '';
+    $scope.numberNine = '';
+    $scope.numberTen = '';
+    $scope.numberEleven = '';
+    $scope.convert = false;
 
-    $scope.lakkanaSetting = {
-        displayProp: 'label'
-    };
-    $scope.lakkanaNumber = [
+    $scope.lakkanaZodiacs = [
         {
             id: 1,
-            label: '๑'
+            label: 'Aries'
         },
         {
             id: 2,
-            label: '๒'
+            label: 'Taurus'
         },
         {
             id: 3,
-            label: '๓'
+            label: 'Gemini'
         },
         {
             id: 4,
-            label: '๔'
+            label: 'Cancer'
         },
         {
             id: 5,
-            label: '๕'
+            label: 'Leo'
         },
         {
             id: 6,
-            label: '๖'
+            label: 'Virgo'
         },
         {
             id: 7,
-            label: '๗'
+            label: 'Libra'
         },
         {
             id: 8,
-            label: '๘'
+            label: 'Scorpio'
         },
         {
             id: 9,
-            label: '๙'
+            label: 'Sagitarius'
         },
         {
             id: 10,
-            label: '๐'
+            label: 'Capricornus'
         },
         {
             id: 11,
-            label: 'ล'
+            label: 'Aquarius'
+        },
+        {
+            id: 12,
+            label: 'Pisces'
         }
     ];
 });

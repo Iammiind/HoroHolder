@@ -1,0 +1,16 @@
+.tpt-wrapper {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding: 1% 5% 5% 5%;
+    background-color: #F5F5F5;
+}
+.tpt-header-text {
+    text-align: center;
+}
+.tpt-content-text {
+    font-size: 16px;
+}
+.tpt-image-wrapper {
+    text-align: center;
+    margin: 5%;
+}

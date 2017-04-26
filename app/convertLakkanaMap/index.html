@@ -1,594 +1,513 @@
-<div ng-controller="convertLakkanaMapCtrl">
-    <div class="clm-wrapper">
-        <div class="lkm-wrapper-lakkanaMap">
-            <img class="lkm-wrapper-img" src="images/lakkanaMap.png" alt="">
-            <!--arise zodiacs-->
-            <div class="lkm-aries-index">
-                <div ng-repeat="select in ariseSelected" ng-show="select.id === 1">
-                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text">
-                </div>
-                <div ng-repeat="select in ariseSelected" ng-show="select.id === 2">
-                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text">
-                </div>
-                <div ng-repeat="select in ariseSelected" ng-show="select.id === 3">
-                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text">
-                </div>
-                <div ng-repeat="select in ariseSelected" ng-show="select.id === 4">
-                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text">
-                </div>
-                <div ng-repeat="select in ariseSelected" ng-show="select.id === 5">
-                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text">
-                </div>
-                <div ng-repeat="select in ariseSelected" ng-show="select.id === 6">
-                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text">
-                </div>
-                <div ng-repeat="select in ariseSelected" ng-show="select.id === 7">
-                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text">
-                </div>
-                <div ng-repeat="select in ariseSelected" ng-show="select.id === 8">
-                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text">
-                </div>
-                <div ng-repeat="select in ariseSelected" ng-show="select.id === 9">
-                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text">
-                </div>
-                <div ng-repeat="select in ariseSelected" ng-show="select.id === 10">
-                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text">
-                </div>
-                <div ng-repeat="select in ariseSelected" ng-show="select.id === 11">
-                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text">
-                </div>
-            </div>
-            <!--taurus zodiacs-->
-            <div class="lkm-taurus-index">
-                <div ng-repeat="select in taurusSelected">
-                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 1">
-                </div>
-                <div ng-repeat="select in taurusSelected">
-                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 2">
-                </div>
-                <div ng-repeat="select in taurusSelected">
-                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 3">
-                </div>
-                <div ng-repeat="select in taurusSelected">
-                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 4">
-                </div>
-                <div ng-repeat="select in taurusSelected">
-                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 5">
-                </div>
-                <div ng-repeat="select in taurusSelected">
-                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 6">
-                </div>
-                <div ng-repeat="select in taurusSelected">
-                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 7">
-                </div>
-                <div ng-repeat="select in taurusSelected">
-                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 8">
-                </div>
-                <div ng-repeat="select in taurusSelected">
-                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 9">
-                </div>
-                <div ng-repeat="select in taurusSelected">
-                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 10">
-                </div>
-                <div ng-repeat="select in taurusSelected">
-                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 11">
-                </div>               
-            </div>
-            <!--gemini zodiac-->
-            <div class="lkm-gemini-index">
-                <div ng-repeat="select in geminiSelected">
-                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 1">
-                </div>
-                <div ng-repeat="select in geminiSelected">
-                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 2">
-                </div>
-                <div ng-repeat="select in geminiSelected">
-                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 3">
-                </div>
-                <div ng-repeat="select in geminiSelected">
-                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 4">
-                </div>
-                <div ng-repeat="select in geminiSelected">
-                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 5">
-                </div>
-                <div ng-repeat="select in geminiSelected">
-                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 6">
-                </div>
-                <div ng-repeat="select in geminiSelected">
-                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 7">
-                </div>
-                <div ng-repeat="select in geminiSelected">
-                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 8">
-                </div>
-                <div ng-repeat="select in geminiSelected">
-                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 9">
-                </div>
-                <div ng-repeat="select in geminiSelected">
-                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 10">
-                </div>
-                <div ng-repeat="select in geminiSelected">
-                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 11">
-                </div>   
-            </div>
-            <!--cancer zodiac-->
-            <div class="lkm-cancer-index">
-                <div ng-repeat="select in cancerSelected">
-                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 1">
-                </div>
-                <div ng-repeat="select in cancerSelected">
-                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 2">
-                </div>
-                <div ng-repeat="select in cancerSelected">
-                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 3">
-                </div>
-                <div ng-repeat="select in cancerSelected">
-                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 4">
-                </div>
-                <div ng-repeat="select in cancerSelected">
-                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 5">
-                </div>
-                <div ng-repeat="select in cancerSelected">
-                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 6">
-                </div>
-                <div ng-repeat="select in cancerSelected">
-                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 7">
-                </div>
-                <div ng-repeat="select in cancerSelected">
-                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 8">
-                </div>
-                <div ng-repeat="select in cancerSelected">
-                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 9">
-                </div>
-                <div ng-repeat="select in cancerSelected">
-                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 10">
-                </div>
-                <div ng-repeat="select in cancerSelected">
-                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 11">
-                </div>
-            </div>
-            <!--leo zodiac-->
-            <div class="lkm-leo-index">
-                <div ng-repeat="select in leoSelected">
-                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 1">
-                </div>
-                <div ng-repeat="select in leoSelected">
-                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 2">
-                </div>
-                <div ng-repeat="select in leoSelected">
-                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 3">
-                </div>
-                <div ng-repeat="select in leoSelected">
-                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 4">
-                </div>
-                <div ng-repeat="select in leoSelected">
-                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 5">
-                </div>
-                <div ng-repeat="select in leoSelected">
-                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 6">
-                </div>
-                <div ng-repeat="select in leoSelected">
-                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 7">
-                </div>
-                <div ng-repeat="select in leoSelected">
-                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 8">
-                </div>
-                <div ng-repeat="select in leoSelected">
-                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 9">
-                </div>
-                <div ng-repeat="select in leoSelected">
-                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 10">
-                </div>
-                <div ng-repeat="select in leoSelected">
-                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 11">
-                </div>
-            </div>
-            <!--virgo zodiac-->
-            <div class="lkm-virgo-index">
-                <div ng-repeat="select in virgoSelected"> 
-                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 1">
-                </div>
-                <div ng-repeat="select in virgoSelected"> 
-                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 2">
-                </div>
-                <div ng-repeat="select in virgoSelected"> 
-                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 3">
-                </div>
-                <div ng-repeat="select in virgoSelected"> 
-                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 4">
-                </div>
-                <div ng-repeat="select in virgoSelected"> 
-                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 5">
-                </div>
-                <div ng-repeat="select in virgoSelected"> 
-                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 6">
-                </div>
-                <div ng-repeat="select in virgoSelected"> 
-                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 7">
-                </div>
-                <div ng-repeat="select in virgoSelected"> 
-                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 8">
-                </div>
-                <div ng-repeat="select in virgoSelected"> 
-                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 9">
-                </div>
-                <div ng-repeat="select in virgoSelected"> 
-                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 10">
-                </div>
-                <div ng-repeat="select in virgoSelected"> 
-                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 11">
-                </div>
-            </div>
-            <!--libra zodiac-->
-            <div class="lkm-libra-index">
-                <div ng-repeat="select in libraSelected"> 
-                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 1">
-                </div>
-                <div ng-repeat="select in libraSelected"> 
-                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 2">
-                </div>
-                <div ng-repeat="select in libraSelected"> 
-                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 3">
-                </div>
-                <div ng-repeat="select in libraSelected"> 
-                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 4">
-                </div>
-                <div ng-repeat="select in libraSelected"> 
-                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 5">
-                </div>
-                <div ng-repeat="select in libraSelected"> 
-                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 6">
-                </div>
-                <div ng-repeat="select in libraSelected"> 
-                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 7">
-                </div>
-                <div ng-repeat="select in libraSelected"> 
-                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 8">
-                </div>
-                <div ng-repeat="select in libraSelected"> 
-                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 9">
-                </div>
-                <div ng-repeat="select in libraSelected"> 
-                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 10">
-                </div>
-                <div ng-repeat="select in libraSelected"> 
-                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 11">
-                </div>
-            </div>
-            <!--pisces zodiac-->
-            <div class="lkm-pisces-index">
-                <div ng-repeat="select in piscesSelected"> 
-                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 1">
-                </div>
-                <div ng-repeat="select in piscesSelected">
-                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 2">
-                </div>
-                <div ng-repeat="select in piscesSelected">
-                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 3">
-                </div>
-                <div ng-repeat="select in piscesSelected">
-                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 4">
-                </div>
-                <div ng-repeat="select in piscesSelected">
-                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 5">
-                </div>
-                <div ng-repeat="select in piscesSelected">
-                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 6">
-                </div>
-                <div ng-repeat="select in piscesSelected">
-                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 7">
-                </div>
-                <div ng-repeat="select in piscesSelected">
-                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 8">
-                </div>
-                <div ng-repeat="select in piscesSelected">
-                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 9">
-                </div>
-                <div ng-repeat="select in piscesSelected">
-                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 10">
-                </div>
-                <div ng-repeat="select in piscesSelected">
-                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 11">
-                </div>
-            </div>
-            <!--aquarius zodiac-->
-            <div class="lkm-aquarius-index">
-                <div ng-repeat="select in aquariusSelected">
-                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 1">
-                </div>
-                <div ng-repeat="select in aquariusSelected">
-                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 2">
-                </div>
-                <div ng-repeat="select in aquariusSelected">
-                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 3">
-                </div>
-                <div ng-repeat="select in aquariusSelected">
-                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 4">
-                </div>
-                <div ng-repeat="select in aquariusSelected">
-                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 5">
-                </div>
-                <div ng-repeat="select in aquariusSelected">
-                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 6">
-                </div>
-                <div ng-repeat="select in aquariusSelected">
-                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 7">
-                </div>
-                <div ng-repeat="select in aquariusSelected">
-                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 8">
-                </div>
-                <div ng-repeat="select in aquariusSelected">
-                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 9">
-                </div>
-                <div ng-repeat="select in aquariusSelected">
-                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 10">
-                </div>
-                <div ng-repeat="select in aquariusSelected">
-                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 11">
-                </div>          
-            </div>
-            <!--capricornus zodiac-->
-            <div class="lkm-capricornus-index">
-                <div ng-repeat="select in capricornusSelected">
-                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 1">
-                </div>
-                <div ng-repeat="select in capricornusSelected">
-                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 2">
-                </div>
-                <div ng-repeat="select in capricornusSelected">
-                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 3">
-                </div>
-                <div ng-repeat="select in capricornusSelected">
-                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 4">
-                </div>
-                <div ng-repeat="select in capricornusSelected">
-                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 5">
-                </div>
-                <div ng-repeat="select in capricornusSelected">
-                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 6">
-                </div>
-                <div ng-repeat="select in capricornusSelected">
-                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 7">
-                </div>
-                <div ng-repeat="select in capricornusSelected">
-                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 8">
-                </div>
-                <div ng-repeat="select in capricornusSelected">
-                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 9">
-                </div>
-                <div ng-repeat="select in capricornusSelected">
-                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 10">
-                </div>
-                <div ng-repeat="select in capricornusSelected">
-                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 11">
-                </div>
-            </div>
-            <!--sagitarius zodiacs-->
-            <div class="lkm-sagitarius-index">
-                <div ng-repeat="select in sagitariusSelected">
-                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 1">
-                </div>
-                <div ng-repeat="select in sagitariusSelected">
-                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 2">
-                </div>
-                <div ng-repeat="select in sagitariusSelected">
-                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 3">
-                </div>
-                <div ng-repeat="select in sagitariusSelected">
-                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 4">
-                </div>
-                <div ng-repeat="select in sagitariusSelected">
-                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 5">
-                </div>
-                <div ng-repeat="select in sagitariusSelected">
-                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 6">
-                </div>
-                <div ng-repeat="select in sagitariusSelected">
-                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 7">
-                </div>
-                <div ng-repeat="select in sagitariusSelected">
-                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 8">
-                </div>
-                <div ng-repeat="select in sagitariusSelected">
-                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 9">
-                </div>
-                <div ng-repeat="select in sagitariusSelected">
-                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 10">
-                </div>
-                <div ng-repeat="select in sagitariusSelected">
-                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 11">
-                </div>
-            </div>
-            <!--scorpio zodiac-->
-            <div class="lkm-scorpio-index">
-                <div ng-repeat="select in scorpioSelected"> 
-                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 1">
-                </div>
-                <div ng-repeat="select in scorpioSelected"> 
-                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 2">
-                </div>
-                <div ng-repeat="select in scorpioSelected"> 
-                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 3">
-                </div>
-                <div ng-repeat="select in scorpioSelected"> 
-                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 4">
-                </div>
-                <div ng-repeat="select in scorpioSelected"> 
-                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 5">
-                </div>
-                <div ng-repeat="select in scorpioSelected"> 
-                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 6">
-                </div>
-                <div ng-repeat="select in scorpioSelected"> 
-                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 7">
-                </div>
-                <div ng-repeat="select in scorpioSelected"> 
-                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 8">
-                </div>
-                <div ng-repeat="select in scorpioSelected"> 
-                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 9">
-                </div>
-                <div ng-repeat="select in scorpioSelected"> 
-                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 10">
-                </div>
-                <div ng-repeat="select in scorpioSelected"> 
-                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="select.id === 11">
+<div class="clm-wrapper">
+    <div class="clm-header-text">
+        <h2> Convert Lakkana Map to Mapping of stars </h2>
+    </div>
+    <div ng-controller="convertLakkanaMapCtrl">
+        <!--lakkana map-->
+        <div ng-hide="convert">
+            <div class="lkm-wrapper-lakkanaMap">
+                <img class="lkm-wrapper-img" src="images/lakkanaMap.png" alt="">
+                <div class="lkm-aries-index">
+                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="numberOne == 'Aries'">
+                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="numberTwo == 'Aries'">
+                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="numberThree == 'Aries'">
+                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="numberFour == 'Aries'">
+                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="numberFive == 'Aries'">
+                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="numberSix == 'Aries'">
+                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="numberSeven == 'Aries'">
+                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="numberEight == 'Aries'">
+                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="numberNine == 'Aries'">
+                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="numberTen == 'Aries'">
+                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="numberEleven == 'Aries'">
+                </div>
+                <div class="lkm-taurus-index">
+                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="numberOne == 'Taurus'">
+                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="numberTwo == 'Taurus'">
+                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="numberThree == 'Taurus'">
+                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="numberFour == 'Taurus'">
+                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="numberFive == 'Taurus'">
+                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="numberSix == 'Taurus'">
+                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="numberSeven == 'Taurus'">
+                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="numberEight == 'Taurus'">
+                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="numberNine == 'Taurus'">
+                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="numberTen == 'Taurus'">
+                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="numberEleven == 'Taurus'">
+                </div>
+                <div class="lkm-gemini-index"> 
+                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="numberOne == 'Gemini'">
+                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="numberTwo == 'Gemini'">
+                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="numberThree == 'Gemini'">
+                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="numberFour == 'Gemini'">
+                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="numberFive == 'Gemini'">
+                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="numberSix == 'Gemini'">
+                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="numberSeven == 'Gemini'">
+                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="numberEight == 'Gemini'">
+                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="numberNine == 'Gemini'">
+                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="numberTen == 'Gemini'">
+                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="numberEleven == 'Gemini'">
+                </div>
+                <div class="lkm-cancer-index"> 
+                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="numberOne == 'Cancer'">
+                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="numberTwo == 'Cancer'">
+                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="numberThree == 'Cancer'">
+                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="numberFour == 'Cancer'">
+                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="numberFive == 'Cancer'">
+                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="numberSix == 'Cancer'">
+                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="numberSeven == 'Cancer'">
+                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="numberEight == 'Cancer'">
+                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="numberNine == 'Cancer'">
+                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="numberTen == 'Cancer'">
+                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="numberEleven == 'Cancer'">
+                </div>
+                <div class="lkm-leo-index"> 
+                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="numberOne == 'Leo'">
+                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="numberTwo == 'Leo'">
+                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="numberThree == 'Leo'">
+                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="numberFour == 'Leo'">
+                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="numberFive == 'Leo'">
+                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="numberSix == 'Leo'">
+                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="numberSeven == 'Leo'">
+                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="numberEight == 'Leo'">
+                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="numberNine == 'Leo'">
+                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="numberTen == 'Leo'">
+                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="numberEleven == 'Leo'">
+                </div>
+                <div class="lkm-virgo-index"> 
+                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="numberOne == 'Virgo'">
+                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="numberTwo == 'Virgo'">
+                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="numberThree == 'Virgo'">
+                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="numberFour == 'Virgo'">
+                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="numberFive == 'Virgo'">
+                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="numberSix == 'Virgo'">
+                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="numberSeven == 'Virgo'">
+                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="numberEight == 'Virgo'">
+                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="numberNine == 'Virgo'">
+                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="numberTen == 'Virgo'">
+                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="numberEleven == 'Virgo'">
+                </div>
+                <div class="lkm-libra-index"> 
+                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="numberOne == 'Libra'">
+                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="numberTwo == 'Libra'">
+                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="numberThree == 'Libra'">
+                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="numberFour == 'Libra'">
+                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="numberFive == 'Libra'">
+                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="numberSix == 'Libra'">
+                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="numberSeven == 'Libra'">
+                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="numberEight == 'Libra'">
+                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="numberNine == 'Libra'">
+                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="numberTen == 'Libra'">
+                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="numberEleven == 'Libra'">
+                </div>
+                <div class="lkm-scorpio-index"> 
+                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="numberOne == 'Scorpio'">
+                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="numberTwo == 'Scorpio'">
+                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="numberThree == 'Scorpio'">
+                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="numberFour == 'Scorpio'">
+                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="numberFive == 'Scorpio'">
+                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="numberSix == 'Scorpio'">
+                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="numberSeven == 'Scorpio'">
+                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="numberEight == 'Scorpio'">
+                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="numberNine == 'Scorpio'">
+                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="numberTen == 'Scorpio'">
+                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="numberEleven == 'Scorpio'">
+                </div>
+                <div class="lkm-sagitarius-index"> 
+                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="numberOne == 'Sagitarius'">
+                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="numberTwo == 'Sagitarius'">
+                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="numberThree == 'Sagitarius'">
+                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="numberFour == 'Sagitarius'">
+                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="numberFive == 'Sagitarius'">
+                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="numberSix == 'Sagitarius'">
+                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="numberSeven == 'Sagitarius'">
+                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="numberEight == 'Sagitarius'">
+                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="numberNine == 'Sagitarius'">
+                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="numberTen == 'Sagitarius'">
+                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="numberEleven == 'Sagitarius'">
+                </div>
+                <div class="lkm-capricornus-index"> 
+                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="numberOne == 'Capricornus'">
+                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="numberTwo == 'Capricornus'">
+                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="numberThree == 'Capricornus'">
+                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="numberFour == 'Capricornus'">
+                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="numberFive == 'Capricornus'">
+                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="numberSix == 'Capricornus'">
+                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="numberSeven == 'Capricornus'">
+                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="numberEight == 'Capricornus'">
+                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="numberNine == 'Capricornus'">
+                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="numberTen == 'Capricornus'">
+                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="numberEleven == 'Capricornus'">
+                </div>
+                <div class="lkm-aquarius-index"> 
+                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="numberOne == 'Aquarius'">
+                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="numberTwo == 'Aquarius'">
+                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="numberThree == 'Aquarius'">
+                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="numberFour == 'Aquarius'">
+                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="numberFive == 'Aquarius'">
+                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="numberSix == 'Aquarius'">
+                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="numberSeven == 'Aquarius'">
+                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="numberEight == 'Aquarius'">
+                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="numberNine == 'Aquarius'">
+                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="numberTen == 'Aquarius'">
+                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="numberEleven == 'Aquarius'">
+                </div>
+                <div class="lkm-pisces-index"> 
+                    <img src="images/text/A1.png" alt="" class="lkm-lakkana-text" ng-show="numberOne == 'Pisces'">
+                    <img src="images/text/A2.png" alt="" class="lkm-lakkana-text" ng-show="numberTwo == 'Pisces'">
+                    <img src="images/text/A3.png" alt="" class="lkm-lakkana-text" ng-show="numberThree == 'Pisces'">
+                    <img src="images/text/A4.png" alt="" class="lkm-lakkana-text" ng-show="numberFour == 'Pisces'">
+                    <img src="images/text/A5.png" alt="" class="lkm-lakkana-text" ng-show="numberFive == 'Pisces'">
+                    <img src="images/text/A6.png" alt="" class="lkm-lakkana-text" ng-show="numberSix == 'Pisces'">
+                    <img src="images/text/A7.png" alt="" class="lkm-lakkana-text" ng-show="numberSeven == 'Pisces'">
+                    <img src="images/text/A8.png" alt="" class="lkm-lakkana-text" ng-show="numberEight == 'Pisces'">
+                    <img src="images/text/A9.png" alt="" class="lkm-lakkana-text" ng-show="numberNine == 'Pisces'">
+                    <img src="images/text/A10.png" alt="" class="lkm-lakkana-text" ng-show="numberTen == 'Pisces'">
+                    <img src="images/text/ALux.png" alt="" class="lkm-lakkana-text" ng-show="numberEleven == 'Pisces'">
                 </div>
             </div>
         </div>
-    </div>
 
-    <!--selected form-->
-    <div class="clm-selected-main-wrapper" ng-hide="statusConvert">
-        <div class="clm-selected-wrapper">
-            <div class="row">
-                <div class="col-md-6 col-xs-12">
-                    <!--column left-->
-                    <!--arise zodiac-->
-                    <div class="clm-zodiac-wrapper">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-6">
-                                <div class="clm-text-zodiacs"> ARISE </div>
-                            </div>
-                            <div class="col-md-6 col-xs-6">
-                                <div ng-dropdown-multiselect="" options="lakkanaNumber" selected-model="ariseSelected" extra-settings="lakkanaSetting"></div>
-                            </div>
+        <!--table select lakana number-->
+        <div class="clm-wrapper" ng-hide="convert">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th class="clm-header-text"> ZODIACS </th>
+                        <th class="clm-header-text"> STAR NUMBERING </th>
+                    </tr>
+                    </thead>
+                    <tbody class="clm-content-wrapper ">
+                    <!--๑ = sun-->
+                    <tr>
+                        <td>
+                        <div>
+                            <select ng-model="numberOne" class="clm-select-wrapper">
+                                <option ng-repeat="option in lakkanaZodiacs">{{option.label}}</option>
+                            </select>
                         </div>
-                    </div>
-                    <!--pisces zodiac-->
-                    <div class="clm-zodiac-wrapper">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-6">
-                                <div class="clm-text-zodiacs"> PISCES </div>
-                            </div>
-                            <div class="col-md-6 col-xs-6">
-                                <div ng-dropdown-multiselect="" options="lakkanaNumber" selected-model="piscesSelected" extra-settings="lakkanaSetting"></div>
-                            </div>
+                        </td>
+                        <td>
+                        <div>
+                            ๑ = SUN (พระอาทิตย์)
                         </div>
-                    </div>
-                    <!--aquarius zodiac-->
-                    <div class="clm-zodiac-wrapper">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-6">
-                                <div class="clm-text-zodiacs"> AQUARIUS </div>
+                        </td>
+                    </tr>
+                    <!--๒ = moon-->
+                    <tr>
+                        <td>
+                            <div>
+                                <select ng-model="numberTwo" class="clm-select-wrapper">
+                                    <option ng-repeat="option in lakkanaZodiacs">{{option.label}}</option>
+                                </select>
                             </div>
-                            <div class="col-md-6 col-xs-6">
-                                <div ng-dropdown-multiselect="" options="lakkanaNumber" selected-model="aquariusSelected" extra-settings="lakkanaSetting"></div>
+                        </td>
+                        <td>
+                            <div>
+                                ๒ = MOON (พระจันทร์)
                             </div>
-                        </div>
-                    </div>
-                    <!--capricornus zodiac-->
-                    <div class="clm-zodiac-wrapper">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-6">
-                                <div class="clm-text-zodiacs"> CAPRICORNUS </div>
+                        </td>
+                    </tr>
+                    <!--๓ = mar -->
+                    <tr>
+                        <td>
+                            <div>
+                                <select ng-model="numberThree" class="clm-select-wrapper">
+                                    <option ng-repeat="option in lakkanaZodiacs">{{option.label}}</option>
+                                </select>
                             </div>
-                            <div class="col-md-6 col-xs-6">
-                                <div ng-dropdown-multiselect="" options="lakkanaNumber" selected-model="capricornusSelected" extra-settings="lakkanaSetting"></div>
+                        </td>
+                        <td>
+                            <div>
+                                ๓ = MAR (ดาวอังคาร)
                             </div>
-                        </div>
-                    </div>
-                    <!--sagitarius zodiac-->
-                    <div class="clm-zodiac-wrapper">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-6">
-                                <div class="clm-text-zodiacs"> SAGITARIUS </div>
+                        </td>
+                    </tr>
+                    <!--๔ = mercury-->
+                    <tr>
+                        <td>
+                            <div>
+                                <select ng-model="numberFour" class="clm-select-wrapper">
+                                    <option ng-repeat="option in lakkanaZodiacs">{{option.label}}</option>
+                                </select>
                             </div>
-                            <div class="col-md-6 col-xs-6">
-                                <div ng-dropdown-multiselect="" options="lakkanaNumber" selected-model="sagitariusSelected" extra-settings="lakkanaSetting"></div>
+                        </td>
+                        <td>
+                            <div>
+                                ๔ = MERCURY (ดาวพุธ)
                             </div>
-                        </div>
-                    </div>
-                    <!--scorpio zodiac-->
-                    <div class="clm-zodiac-wrapper">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-6">
-                                <div class="clm-text-zodiacs"> SCORPIO </div>
+                        </td>
+                    </tr>
+                    <!--๕ = jupiter-->
+                    <tr>
+                        <td>
+                            <div>
+                                <select ng-model="numberFive" class="clm-select-wrapper">
+                                    <option ng-repeat="option in lakkanaZodiacs">{{option.label}}</option>
+                                </select>
                             </div>
-                            <div class="col-md-6 col-xs-6">
-                                <div ng-dropdown-multiselect="" options="lakkanaNumber" selected-model="scorpioSelected" extra-settings="lakkanaSetting"></div>
+                        </td>
+                        <td>
+                            <div>
+                                ๕ = JUPITER (ดาวพฤหัส)
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                    <!--column right-->
-                    <!--libra zodiac-->
-                    <div class="clm-zodiac-wrapper">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-6">
-                                <div class="clm-text-zodiacs"> LIBRA </div>
+                        </td>
+                    </tr>
+                    <!--๖ = venus-->
+                    <tr>
+                        <td>
+                            <div>
+                                <select ng-model="numberSix" class="clm-select-wrapper">
+                                    <option ng-repeat="option in lakkanaZodiacs">{{option.label}}</option>
+                                </select>
                             </div>
-                            <div class="col-md-6 col-xs-6">
-                                <div ng-dropdown-multiselect="" options="lakkanaNumber" selected-model="libraSelected" extra-settings="lakkanaSetting"></div>
+                        </td>
+                        <td>
+                            <div>
+                                ๖ = VENUS (ดาวศุกร์)
                             </div>
-                        </div>
-                    </div>
-                    <!--virgo zodiac-->
-                    <div class="clm-zodiac-wrapper">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-6">
-                                <div class="clm-text-zodiacs"> VIRGO </div>
+                        </td>
+                    </tr>
+                    <!--๗ = saturn-->
+                    <tr>
+                        <td>
+                            <div>
+                                <select ng-model="numberSeven" class="clm-select-wrapper">
+                                    <option ng-repeat="option in lakkanaZodiacs">{{option.label}}</option>
+                                </select>
                             </div>
-                            <div class="col-md-6 col-xs-6">
-                                <div ng-dropdown-multiselect="" options="lakkanaNumber" selected-model="virgoSelected" extra-settings="lakkanaSetting"></div>
+                        </td>
+                        <td>
+                            <div>
+                                ๗ = SATURN (ดาวเสาร์)
                             </div>
-                        </div>
-                    </div>
-                    <!--leo zodiac-->
-                    <div class="clm-zodiac-wrapper">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-6">
-                                <div class="clm-text-zodiacs"> LEO </div>
+                        </td>
+                    </tr>
+                    <!--๘ = eclipse-->
+                    <tr>
+                        <td>
+                            <div>
+                                <select ng-model="numberEight" class="clm-select-wrapper">
+                                    <option ng-repeat="option in lakkanaZodiacs">{{option.label}}</option>
+                                </select>
                             </div>
-                            <div class="col-md-6 col-xs-6">
-                                <div ng-dropdown-multiselect="" options="lakkanaNumber" selected-model="leoSelected" extra-settings="lakkanaSetting"></div>
+                        </td>
+                        <td>
+                            <div>
+                                ๘ = ECLIPSE (ดาวเสาร์)
                             </div>
-                        </div>
-                    </div>
-                    <!--cancer zodiac-->
-                    <div class="clm-zodiac-wrapper">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-6">
-                                <div class="clm-text-zodiacs"> CANCER </div>
+                        </td>
+                    </tr>
+                    <!--๙ = neptune-->
+                    <tr>
+                        <td>
+                            <div>
+                                <select ng-model="numberNine" class="clm-select-wrapper">
+                                    <option ng-repeat="option in lakkanaZodiacs">{{option.label}}</option>
+                                </select>
                             </div>
-                            <div class="col-md-6 col-xs-6">
-                                <div ng-dropdown-multiselect="" options="lakkanaNumber" selected-model="cancerSelected" extra-settings="lakkanaSetting"></div>
+                        </td>
+                        <td>
+                            <div>
+                                ๙ = NEPTUNE (ดาวราหู)
                             </div>
-                        </div>
-                    </div>
-                    <!--gemini zodiac-->
-                    <div class="clm-zodiac-wrapper">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-6">
-                                <div class="clm-text-zodiacs"> GEMINI </div>
+                        </td>
+                    </tr>
+                    <!--๐ = uranus-->
+                    <tr>
+                        <td>
+                            <div>
+                                <select ng-model="numberTen" class="clm-select-wrapper">
+                                    <option ng-repeat="option in lakkanaZodiacs">{{option.label}}</option>
+                                </select>
                             </div>
-                            <div class="col-md-6 col-xs-6">
-                                <div ng-dropdown-multiselect="" options="lakkanaNumber" selected-model="geminiSelected" extra-settings="lakkanaSetting"></div>
+                        </td>
+                        <td>
+                            <div>
+                                ๐ = uranus (ดาวเกตุ)
                             </div>
-                        </div>
-                    </div>
-                    <!--taurus zodiac-->
-                    <div class="clm-zodiac-wrapper">
-                        <div class="row">
-                            <div class="col-md-6 col-xs-6">
-                                <div class="clm-text-zodiacs"> TAURUS </div>
+                        </td>
+                    </tr>
+                    <!--ล = lakkana-->
+                    <tr>
+                        <td>
+                            <div>
+                                <select ng-model="numberEleven" class="clm-select-wrapper">
+                                    <option ng-repeat="option in lakkanaZodiacs">{{option.label}}</option>
+                                </select>
                             </div>
-                            <div class="col-md-6 col-xs-6">
-                                <div ng-dropdown-multiselect="" options="lakkanaNumber" selected-model="taurusSelected" extra-settings="lakkanaSetting"></div>
+                        </td>
+                        <td>
+                            <div>
+                                ล = LAKKANA (ลัคนา)
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 clm-button-wrapper">
-                            <button type="button" class="btn btn-default clm-convert-button" ng-click="statusConvert = !statusConvert">CONVERT</button>
-                        </div>
-                    </div>
-                </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
+            <!--convert button-->
+            <button type="button" class="btn btn-default clm-convert-button" ng-click="convert = !convert">CONVERT</button>
         </div>
-    </div>
-    <!--back button-->
-    <div class="clm-back-button">
-        <button type="button" class="btn btn-default" ng-click="statusConvert = !statusConvert" ng-hide="!statusConvert">BACK</button>
+
+        <!--table conclusion-->
+        <div class="clm-wrapper" ng-hide="!convert">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th class="clm-header-text">ZODIACS</th>
+                        <th class="clm-header-text">STAR NUMBERING</th>
+                    </tr>
+                    </thead>
+                    <tbody class="clm-content-wrapper ">
+                    <!--๑ = sun-->
+                    <tr>
+                        <td>
+                            <div>
+                                ๑ = SUN (พระอาทิตย์)
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                {{numberOne}}
+                            </div>
+                        </td>
+                    </tr>
+                    <!--๒ = moon-->
+                    <tr>
+                        <td>
+                            <div>
+                                ๒ = MOON (พระจันทร์)
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                {{numberTwo}}
+                            </div>
+                        </td>
+                    </tr>
+                    <!--๓ = mar -->
+                    <tr>
+                        <td>
+                            <div>
+                                ๓ = MAR (ดาวอังคาร)
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                {{numberThree}}
+                            </div>
+                        </td>
+                    </tr>
+                    <!--๔ = mercury-->
+                    <tr>
+                        <td>
+                            <div>
+                                ๔ = MERCURY (ดาวพุธ)
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                {{numberFour}}
+                            </div>
+                        </td>
+                    </tr>
+                    <!--๕ = jupiter-->
+                    <tr>
+                        <td>
+                            <div>
+                                ๕ = JUPITER (ดาวพฤหัส)
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                {{numberFive}}
+                            </div>
+                        </td>
+                    </tr>
+                    <!--๖ = venus-->
+                    <tr>
+                        <td>
+                            <div>
+                                ๖ = VENUS (ดาวศุกร์)
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                {{numberSix}}
+                            </div>
+                        </td>
+                    </tr>
+                    <!--๗ = saturn-->
+                    <tr>
+                        <td>
+                            <div>
+                            ๗ = SATURN (ดาวเสาร์)
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                {{numberSeven}}
+                            </div>
+                        </td>
+                    </tr>
+                    <!--๘ = eclipse-->
+                    <tr>
+                        <td>
+                            <div>
+                                ๘ = ECLIPSE (ดาวเสาร์)
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                {{numberEight}}
+                            </div>
+                        </td>
+                    </tr>
+                    <!--๙ = neptune-->
+                    <tr>
+                        <td>
+                            <div>
+                            ๙ = NEPTUNE (ดาวราหู)
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                {{numberNine}}
+                            </div>
+                        </td>
+                    </tr>
+                    <!--๐ = uranus-->
+                    <tr>
+                        <td>
+                            <div>
+                                ๐ = uranus (ดาวเกตุ)
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                {{numberTen}}
+                            </div>
+                        </td>
+                    </tr>
+                    <!--ล = lakkana-->
+                    <tr>
+                        <td>
+                            <div>
+                                ล = LAKKANA (ลัคนา)
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                {{numberEleven}}
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--back button-->
+            <button type="button" class="btn btn-default clm-back-button" ng-click="convert = !convert" ng-hide="!convert">Back</button>
+        </div>
     </div>
 </div>

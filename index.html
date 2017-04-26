@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="app/convertLakkanaMap/style.css">
     <link rel="stylesheet" href="app/component/lakkanaMap/style.css">
     <link rel="stylesheet" href="app/convertMappingOfStar/style.css">
+    <link rel="stylesheet" href="app/findoutLakkanaZodiac/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app/component/top3Zodiacs/style.css">
+    <link rel="stylesheet" href="app/transportation/style.css">
 
     <title>Horo Holder</title>
 </head>
@@ -28,14 +32,14 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <div class="col-md-2">
+            <div class="col-md-2 menu-wrapper">
                 <menu-bar></menu-bar>
             </div>
             <div class="col-md-8">
                  <div ng-view></div>
             </div>
-            <div class="col-md-2">
-                Top3
+            <div class="col-md-2 top3-wrapper">
+                <top3-zodiacs></top3-zodiacs>
             </div>
         </div>
     </div>
@@ -46,8 +50,12 @@
     <script src="app/route.js"></script>
     <script src="app/component/menu/directive.js"></script>
     <script src="app/component/header/directive.js"></script>
-    <script src="app/mainPage/controller.js"></script>
     <script src="app/convertLakkanaMap/controller.js"></script>
     <script src="app/convertMappingOfStar/controller.js"></script>
+    <script src="app/findoutLakkanaZodiac/controller.js"></script>
+    <script src="app/lakkana.factory.js"></script>
+    <script src="bower_components/angular-socialshare/dist/angular-socialshare.min.js"></script>
+    <script src="app/component/top3Zodiacs/directive.js"></script>
+    <script src="app/component/top3Zodiacs/controller.js"></script>
 </body>
 </html>

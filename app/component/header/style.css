@@ -1,9 +1,11 @@
 .header-wrapper{
     width: 100%;
-    background-color: #424242;
+    /*background-color: #424242;*/
+    background-image: url('../../../images/galaxy.jpeg');
+    background-position: center center;
     color: #eee;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  "Magorian Regular",Georgia,Times,"Times New Roman",serif;
     text-align: center;
-    font-size: 50px;
-    padding: 1%;
+    font-size: 70px;
+    padding: 18% 0 22% 0;
 }

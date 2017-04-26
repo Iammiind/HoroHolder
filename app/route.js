@@ -1,8 +1,7 @@
 app.config(function ($routeProvider) {
     $routeProvider
     .when('/', {
-        templateUrl: 'app/mainPage/index.html',
-        controller: 'mainCtrl'
+        templateUrl: 'app/mainPage/index.html'
     })
     .when('/convertLakkanaMap', {
         templateUrl: 'app/convertLakkanaMap/index.html'

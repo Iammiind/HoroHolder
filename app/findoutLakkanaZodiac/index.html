@@ -1,1 +1,49 @@
-<h1>Findout Lakkana</h1>
+
+<div ng-controller="findoutLakkanaZodiac">
+    <!--select form-->
+    <div class="flz-selected-wrapper" ng-hide="stateButton">
+        <div class="flz-header-text">
+            <h2> Find out the Lakkana Zodiacs </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                DATE OF BIRTH: 
+                <select ng-model="dateSelected">
+                    <option ng-repeat="date in arrayDate track by $index" ng-value="$index">{{ date.date }}</option>
+                </select>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                TIME OF BIRTH:
+                <select ng-model="timeSelected">
+                    <option ng-repeat="time in arrayTime track by $index" ng-value="$index">{{ time.time }}</option>
+                </select>
+            </div>
+        </div>
+        <!--submit button-->
+        <button type="button" class="btn btn-default flz-submit-button" ng-click="addTop3Zodiac()"> SUBMIT </button>
+    </div>
+
+    <!--zodiac output-->
+    <div ng-show="stateButton" class="flz-output-lakana-zodiac">
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <div class="flz-lakkana-zodiac-findout">
+                    <h1> Your Lakkana Zodiac <br> 
+                        is <br> 
+                     {{arrayZodiacsMapping[dateSelected][timeSelected]}} </h1>
+                </div>
+            </div>
+            <!--characteristic-->
+            <div class="col-md-12 col-xs-12 flz-lakkana-character ">
+                <span></span>{{characteristic[arrayZodiacsMapping[dateSelected][timeSelected]]}}</span>
+            </div>
+        </div>
+        <!--button part-->
+        <div class="flz-button-part">
+            <!--back button-->
+            <button type="button" class="btn btn-default flz-back-button" ng-click="stateButton = !stateButton">Back</button>
+            <!--social share-->
+            <button type="button" class="btn btn-primary" socialshare socialshare-provider="facebook" socialshare-hashtags="angularjs, angular-socialshare" socialshare-url="http://720kb.net"> Share me </button>
+        </div>
+    </div>
+</div>

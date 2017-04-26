@@ -1,0 +1,41 @@
+.flz-selected-wrapper {
+    margin-top: 2%;
+    margin-bottom: 15%;
+    text-align: center;
+    background-color: #F5F5F5;
+    padding: 1% 5% 5% 5%;
+}
+.flz-header-text {
+    text-align: center;
+    margin-bottom: 5%;
+}
+.flz-output-lakana-zodiac {
+    margin-top: 2%;
+    margin-bottom: 10%;
+    text-align: center;
+    background-color: #F5F5F5;
+    padding: 2%;
+}
+.flz-lakkana-zodiac-findout {
+    text-align: center;
+    font-weight: bold;
+}
+.flz-lakkana-character {
+    margin-top: 2%;
+}
+.flz-button-part {
+    margin-left: -75%;
+    padding: 5%;
+}
+.flz-submit-button {
+    margin-top: 5%;
+}
+.flz-back-button {
+    margin-left: 45%;
+}
+
+@media screen and (max-width: 768px) {
+    .flz-output-lakana-zodiac {
+        padding: 5%;
+    }
+}
