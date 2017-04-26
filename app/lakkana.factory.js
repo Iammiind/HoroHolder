@@ -3,14 +3,14 @@ app.factory('LakkanaFactory', function LakkanaFactory ($http) {
         addTop3Zodiac: function (id) {
             return $http({
                 method: 'GET',
-                url: 'http://localhost/HoroHolder-BackEnd/addLakkanaZodiac.php?id=' + id
+                url: 'addLakkanaZodiac.php?id=' + id
             });
         },
 
         getTop3Zodiacs: function () {
             return $http({
                 method: 'GET',
-                url: 'http://localhost/HoroHolder-BackEnd/getTop3.php'
+                url: 'getTop3.php'
             });
         }
     };

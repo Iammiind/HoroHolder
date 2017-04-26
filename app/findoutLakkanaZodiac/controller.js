@@ -16,6 +16,7 @@ app.controller('findoutLakkanaZodiac', function ($scope, LakkanaFactory) {
         'Aquarius': 11,
         'Pisces': 12
     };
+
     $scope.arrayZodiacsMapping = [
         ['Capricorn', 'Aquarius', 'Pisces', 'Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius' ],
         ['Aquarius', 'Pisces', 'Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn'],
@@ -45,6 +46,8 @@ app.controller('findoutLakkanaZodiac', function ($scope, LakkanaFactory) {
         'Aquarius': 'Friendly ,Humanitarian ,Honest ,Loyal ,Original ,Inventive ,Independent ,Intellectual ,Intractable ,Contrary ,Perverse ,Unpredictable ,Unemotional and Detached',
         'Pisces': 'Imaginative ,Sensitive ,Compassionate ,Kind ,Selfless ,Unworldly ,Intuitive ,Sympathetic ,Escapist ,Idealistic ,Secretive ,Vague ,Weak-willed and Easily led'
     };
+
+    $scope.characterShare = $scope.arrayZodiacsMapping[$scope.dateSelected][$scope.timeSelected] + ' - ' + $scope.characteristic[$scope.arrayZodiacsMapping[$scope.dateSelected][$scope.timeSelected]];
 
     $scope.arrayDate = [
         {
